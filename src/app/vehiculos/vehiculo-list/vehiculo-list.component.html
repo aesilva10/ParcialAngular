@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let vehiculo of vehiculos">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+              <img
+                class="card-img-top"
+                src="{{ vehiculo.imagen }}"
+                alt="{{ vehiculo.nombre }}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ vehiculo.nombre }}</h5>
+                  <p class="card-text">[{{ vehiculo.nombre}}]</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
