@@ -18,5 +18,4 @@ export class Vehiculo {
   this.color=color,
   this.imagen=imagen
   }
-
 }
