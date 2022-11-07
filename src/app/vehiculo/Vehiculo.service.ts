@@ -8,7 +8,7 @@ import { Vehiculo } from './vehiculo';
   providedIn: 'root'
 })
 export class VehiculoService {
-  private apiUrl: string = environment.baseUrl + 'vehiculos';
+  private apiUrl: string = environment.baseUrl;
 constructor(private http: HttpClient) { }
   getVehiculos(): Observable<Vehiculo[]> {
   return this.http.get<Vehiculo[]>(this.apiUrl);
