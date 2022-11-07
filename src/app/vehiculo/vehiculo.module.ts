@@ -6,7 +6,7 @@ import { VehiculoListComponent } from './vehiculo-list/vehiculo-list.component';
   imports: [
     CommonModule
   ],
-  exports:[VehiculoListComponent],
+  exports: [VehiculoListComponent],
   declarations: [VehiculoListComponent]
 })
-export class VehiculosModule { }
+export class VehiculoModule { }

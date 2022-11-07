@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VehiculosModule } from './vehiculos/vehiculos.module';
+import { VehiculoModule } from './vehiculo/vehiculo.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,8 +12,8 @@ import { VehiculosModule } from './vehiculos/vehiculos.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    VehiculosModule,
-    HttpClientModule
+    HttpClientModule,
+    VehiculoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
