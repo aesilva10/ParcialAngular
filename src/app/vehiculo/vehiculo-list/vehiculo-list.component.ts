@@ -9,12 +9,15 @@ import { VehiculoService } from '../Vehiculo.service';
 })
 export class VehiculoListComponent implements OnInit {
   vehiculos:Array<Vehiculo>=[];
+
   constructor(private vehiculoService:VehiculoService) { }
+
   getVehiculos(): void{
     this.vehiculoService.getVehiculos().subscribe((vehiculos)=>{
       this.vehiculos=vehiculos;
     });
   }
+
   ngOnInit() {
     this.getVehiculos();
   }
